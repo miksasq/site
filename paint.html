@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Canvans</title>
+</head>
+<body>
+<canvas id="myCanvans" width="1000" height="1000" style="border: 1px solid #d3d3d3;"></canvas>
+<script type="text/javascript">
+	let canvans = document.getElementById("myCanvans");
+	let cxt = canvans.getContext("2d");
+
+	cxt.globalAlpha = 0.5
+	cxt.beginPath();
+	cxt.arc(400, 200, 100, 0, Math.PI*2, false);
+	cxt.closePath();
+	cxt.fillStyle = "yellow";
+	cxt.fill();
+
+	cxt.beginPath();
+	cxt.arc(365, 150, 15, 0, Math.PI*2, false);
+	cxt.closePath();
+	cxt.fillStyle = "purple";
+	cxt.fill();
+	cxt.beginPath();
+	cxt.arc(435, 150, 15, 0, Math.PI*2, false);
+	cxt.closePath();
+	cxt.fillStyle = "purple";
+	cxt.fill();
+	cxt.beginPath();
+	cxt.arc(400, 200, 50, 0.9*Math.PI, 2.1*Math.PI, true);
+	cxt.lineWidth = 15;
+	cxt.strokeStyle = "red";
+	cxt.stroke();
+
+	cxt.beginPath();
+	cxt.arc(325, 97, 30, 0, Math.PI*2, false);
+	cxt.closePath();
+	cxt.fillStyle = "pink";
+	cxt.fill();
+	cxt.beginPath();
+	cxt.arc(475, 97, 30, 0, Math.PI*2, false);
+	cxt.closePath();
+	cxt.fillStyle = "pink";
+	cxt.fill();
+
+	cxt.beginPath();
+	cxt.arc(400, 200, 15, 0, Math.PI*2, false);
+	cxt.closePath();
+	cxt.fillStyle = "red";
+	cxt.fill();
+
+	cxt.beginPath();
+	cxt.moveTo(430, 320);
+	cxt.lineTo(370, 295);
+	cxt.lineWidth = 16.9;
+	cxt.strokeStyle = "black";
+	cxt.lineCap = "round";
+	cxt.stroke();
+
+	cxt.beginPath();
+	cxt.moveTo(430, 295);
+	cxt.lineTo(370, 320);
+	cxt.lineWidth = 16.9;
+	cxt.strokeStyle = "black";
+	cxt.lineCap = "round";
+	cxt.stroke();
+
+	cxt.beginPath();
+	cxt.moveTo(370, 295);
+	cxt.lineTo(370, 320);
+	cxt.lineWidth = 16.9;
+	cxt.strokeStyle = "black";
+	cxt.lineCap = "round";
+	cxt.stroke();
+
+	cxt.beginPath();
+	cxt.moveTo(430, 295);
+	cxt.lineTo(430, 320);
+	cxt.lineWidth = 16.9;
+	cxt.strokeStyle = "black";
+	cxt.lineCap = "round";
+	cxt.stroke();
+</script>
+</body>
+</html>

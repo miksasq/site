@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		table{
+			border: 5px double pink;
+			width: 450px;
+			border-collapse: separate;
+			border-spacing: 20px;
+		}
+		th,td{
+			border: 5px solid magenta;
+			width: 110px;
+			height: 1cm;			
+		}
+		tr:hover{
+			background-color: pink;
+		}
+		th:hover{
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/16/FullColour.gif);
+			font-size: 200%
+			color: white;
+		}
+		
+		td:hover{
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/16/FullColour.gif)
+					}
+		tr:nth-child(odd){
+			background-color: pink;
+		}
+		caption{
+			font-size: 1cm;
+			color: green;
+			caption-side:; bottom;
+		}
+		button{
+			width: 210px;
+			height: 90px;
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/16/FullColour.gif);
+			background-size: 100px;
+			font-size: 30px;
+			color: #fff;
+			border-radius: 30%;
+		}
+	</style>	
+</head>
+<body>
+<p style="background-color: purple; color: blue; font-size: 50px" id="up">Ми вивчаємо таблиці</p>
+<a href="https://en.wikipedia.org/wiki/Web_colors" target="blank">Html colors</a>
+<a href="https://en.wikipedia.org/wiki/Web_colors" target="blank"><img src="https://i.pinimg.com/originals/e6/f8/0b/e6f80be8122d7019c37b39b02dd6ec2c.gif" width="7
+	0px"></a>
+<a href="https://en.wikipedia.org/wiki/Web_colors" target="blank"><button>Html colors</button></a>
+<table>
+	<caption>Таблиця колорів</caption>
+	<thead>
+		<tr><th>Color</th><th>Name</th><th>HEX</th><th>RGB</th></tr>
+	</thead>
+	<tbody>
+		<tr><td style="background-color: #000"></td><td>Black</td><td>#000000</td><td>(0,0,0)</td></tr>
+		<tr><td style="background-color: #f00"></td><td>Red</td><td>#ff0000</td><td>(255,0,0)</td></tr>
+		<tr><td style="background-color: #0f0"></td><td>Green</td><td>#00ff00</td><td>(0,255,0)</td></tr>
+		<tr><td style="background-color: #00f"></td><td>Blue</td><td>#0000ff</td><td>(0,0,255)</td></tr>
+		<tr><td style="background-color: #fff"></td><td>White</td><td>#ffffff</td><td>(255,255,255)</td></tr>
+		<tr><td style="background-color: #000"></td><td>Black</td><td>#000000</td><td>(0,0,0)</td></tr>
+		<tr><td style="background-color: #f00"></td><td>Red</td><td>#ff0000</td><td>(255,0,0)</td></tr>
+		<tr><td style="background-color: #0f0"></td><td>Green</td><td>#00ff00</td><td>(0,255,0)</td></tr>
+		<tr><td style="background-color: #00f"></td><td>Blue</td><td>#0000ff</td><td>(0,0,255)</td></tr>
+		<tr><td style="background-color: #fff"></td><td>White</td><td>#ffffff</td><td>(255,255,255)</td></tr>
+	</tbody>
+</table>
+<a href="#up"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/45796/fast-up-button-emoji-clipart-xl.png" width="150px"></a>
+</body>
+</html>

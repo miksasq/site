@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+		    color: purple;		
+			background: pink;
+			font-size: 30px;
+			text-align: center;
+			line-height: 50px;
+		}
+	</style>
+</head>
+<body>
+ <script type="text/javascript">
+	/*let numbers = ["Нуль", "Один", "Два"];
+	alert(numbers[0]);
+	alert(numbers[1]);
+	alert(numbers[2]);
+	numbers [2] = "Не два";
+	alert(numbers);
+	numbers [3] = "Три";
+	alert(numbers.length);
+	let colors=["yellow","blue"];
+alert(colors);
+colors.push("red")
+alert(colors);
+colors[colors.length-2]="black";
+alert(colors);
+colors.shift();
+alert(colors);
+colors.unshift("green","orange");
+alert(colors)*/
+ let compliments=["милий", "дружній", "красивий", "розумний", "здібний", "кмітливий", "щедрий", "геній"];
+ let animals=["кіт","вовк", "лисиця", "слон", "лев", "білка", "собака"];
+ let number=prompt("How many compliments would u like", 0)
+ for (let i = 1; i <= number; i++){
+   let rand=Math.floor(Math.random()*compliments.length);
+   document.write(i+") U are so " + compliments[rand]);
+   let random=Math.floor(Math.random()*animals.length);
+   document.write(" as " + animals[random] + "<br>");
+ }
+
+</script> 
+</body>
+</html>

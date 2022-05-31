@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Canvas</title>
+</head>
+<body>
+<canvas id="myCanvans" width="700" height="700" style="border:1px solid #d3d3d3;"></canvas>
+<script type="text/javascript">
+	let c = document.getElementById("myCanvans");
+	let cxt = c.getContext("2d");
+	cxt.fillStyle = "blue";
+	cxt.fillRect(0, 0, 75, 75);
+	cxt.globalAlpha = 0.5;
+	cxt.fillStyle = "red";
+	cxt.fillRect(35, 35, 75, 75);
+
+	cxt.beginPath();
+	cxt.moveTo(50, 50);
+	cxt.lineTo(500, 50);
+	cxt.lineWidth = 15;
+	cxt.strokeStyle = "red";
+	cxt.lineCap = "butt";
+	cxt.stroke();
+
+	cxt.beginPath();
+	cxt.moveTo(50, 100);
+	cxt.lineTo(500, 150);
+	cxt.lineWidth = 15;
+	cxt.strokeStyle = "blue";
+	cxt.lineCap = "round"
+	cxt.stroke();
+
+	cxt.beginPath();
+	cxt.moveTo(50, 150);
+	cxt.lineTo(500, 350);
+	cxt.lineWidth = 15;
+	cxt.strokeStyle = "green";
+	cxt.lineCap = "square";
+	cxt.stroke();
+</script>
+</body>
+</html>

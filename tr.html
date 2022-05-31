@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tr</title>
+	<style type="text/css">
+		body{
+			background-color: purple;
+			color: pink;
+			font-size: 55 px;
+		}
+		p{
+			background-color: yellow;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+<p>Прямокутний трикутник</p>
+<script type="text/javascript">
+	let a=Math.ceil(Math.random()*10);
+	let b=Math.ceil(Math.random()*10);
+	document.write("Катет а=" + a + "<br>");
+	document.write("Катет b=" + b + "<br>");
+	let c=Math.ceil(Math.sqrt(Math.pow(a,2)+b**2));
+	document.write("Гіпотенуза c=" + c + "<br>");
+	let S=a*b/2
+	document.write("Площа трикутника S=" + S + "<br>");
+	let P=a+b+c;
+	document.write("Периметр трикутника P=" + P + "<br>");
+
+</script>
+</body>
+</html>

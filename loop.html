@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loop</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	let numUser; 
+let numX=Math.ceil(Math.random()*100);
+ do { numUser = prompt("вгадайте число від 0 до 100", 0); 
+if (numUser==null) { 
+alert("Ми чекали від Вас число");
+} else if (+numUser<numX) { 
+alert("Ваше число менше"); 
+} else if (+numUser>numX){
+alert("Ваше число більше"); 
+} else if (+numUser==numX){ 
+alert("Ура!!! Вгадали!!! "+numX); } 
+else{
+	alert("Вводьте число")
+}
+} while (numUser != numX && numUser != null);
+
+</script>
+</body>
+</html>

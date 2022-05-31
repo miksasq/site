@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dino</title>
+	<link rel="stylesheet" type="text/css" href="dino.css">
+</head>
+<body>
+<div class="game">
+	<div id="dino"></div>
+	<div id="cactus"></div>
+	<div id="forest"></div>
+	<script type="text/javascript">
+		const dino=document.getElementById("dino");
+		const cactus=document.getElementById("cactus");
+		document.addEventListener("keydown",function(event) {
+			jump();
+		});
+		function jump(){
+			if(dino.classList!="jump"){
+				dino.classList.add("jump")
+			}
+			setTimeout(function(){
+				dino.classList.remove("jump")
+			},300)
+		}
+		let isAlive=setInterval(function(){
+			let dinoTop=parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
+			let cactusLeft=parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
+			if(cactusLeft<50&&cactusLeft>0&&dinoTop>=140){
+				alert("GAME OVER")
+			}
+		},60)
+	</script>
+</div>
+</body>
+</html>
